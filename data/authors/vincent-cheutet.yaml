@@ -1,0 +1,33 @@
+schema: hugoblox/author/v1
+slug: vincent-cheutet
+is_owner: true
+name:
+  display: Vincent Cheutet
+  given: Vincent
+  family: Cheutet
+status:
+  icon: "🔬"
+# 💡 AJOUTE OU VÉRIFIE CETTE SECTION :
+user_groups:
+  - "Direction"
+  - "Chercheurs" # Un membre peut appartenir à plusieurs groupes !
+role: Directeur du Laboratoire DISP
+bio: |
+  Vincent Cheutet est Professeur des Universités à l'INSA de Lyon et dirige le laboratoire DISP. Ses activités de recherche portent principalement sur le Génie Industriel, le PLM (Product Lifecycle Management) et la modélisation de systèmes complexes.
+
+affiliations:
+  - name: INSA Lyon
+    url: https://www.insa-lyon.fr/
+
+links:
+  - icon: at-symbol
+    url: mailto:vincent.cheutet@insa-lyon.fr
+    label: E-mail
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com
+
+interests:
+  - Génie Industriel
+  - Product Lifecycle Management (PLM)
+  - Modélisation et Simulation
+  - Systèmes de Production Intelligents

@@ -1,27 +1,43 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-  #     desired widget in your `content/home/` folder.
-  #   The weight parameter defines the order that the links will appear in.
-
+# Navigation Links du Laboratoire DISP
 main:
-  - name: Bio
-    url: /
+  - name: Le Laboratoire
+    url: /labo/
     weight: 10
-  - name: Papers
-    url: /#papers
-    weight: 11
-  - name: Talks
-    url: /#talks
-    weight: 12
-  - name: News
-    url: /#news
-    weight: 13
-  - name: Experience
-    url: experience/
+
+  # 1. On crée l'onglet "Chapeau" (sans URL ou pointant vers la page liste)
+  # On lui donne un ID unique appelé "axes_root"
+  - id: axes_root
+    name: Axes scientifiques
+    url: /axes/
     weight: 20
-  - name: Projects
-    url: projects/
+
+  # 2. On attache le premier sous-menu en définissant son parent
+  - name: Axe Gestion et Optimisation des Opérations
+    url: /axes/axe-g2o/
+    parent: Axes scientifiques
+    weight: 21
+
+  # 3. On attache le deuxième sous-menu au même parent
+  - name: Axe Systèmes d'Information et Données
+    url: /axes/axe-sido/
+    parent: Axes scientifiques
+    weight: 22
+  
+  # 4. On attache le troisième sous-menu au même parent
+  - name: Axe TOOLS
+    url: /axes/axe-tools/
+    parent: Axes scientifiques
+    weight: 23
+
+  - name: Membres
+    url: /membres/
     weight: 30
-  - name: Courses
-    url: courses/
+  - name: Projets
+    url: /project/
     weight: 40
+  - name: Thèses
+    url: /thesis/
+    weight: 50
+  - name: Publications
+    url: /publication/
+    weight: 60

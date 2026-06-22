@@ -12,20 +12,18 @@ hugoblox:
   # Site-level branding (for people/profiles, use the author system in content/authors/)
   # ────────────────────────────────────────────────────────────────────────────
   identity:
-    # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
-    # Legal entity for copyright notices (defaults to name if not set)
-    organization: ""
-    # Schema.org type for structured data
-    type: person # person | organization | local_business
-    # Short tagline displayed on your site
-    tagline: ""
-    # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox
-      Kit. Easily create your personal academic website."
-    # Social accounts (used for meta tags like Twitter Cards)
+    # Nom du laboratoire qui s'affichera partout (Navbar, titre...)
+    name: "Laboratoire DISP"
+    # Entité légale pour le footer
+    organization: "Laboratoire DISP - UR 4570"
+    # TRÈS IMPORTANT : On passe de person à organization
+    type: organization 
+    # Le slogan officiel du DISP
+    tagline: "Décision et Information pour les Systèmes de Production"
+    # Description pour Google
+    description: "Laboratoire DISP (UR 4570) - Recherche en Génie Industriel et Systèmes d'Information pour les entreprises et le secteur de la santé."
     social:
-      twitter: "GoOwnable" # Twitter/X handle for Twitter Cards (without @)
+      twitter: "disp_lab"
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -132,15 +130,15 @@ hugoblox:
     # For local_business identity type only
     location:
       address:
-        street: ""
-        city: ""
-        region: ""
-        postal_code: ""
-        country: ""
+        street: "21 Avenue Jean Capelle"
+        city: Villeurbanne
+        region: "Auvergne-Rhône-Alpes"
+        postal_code: "69621"
+        country: "France"
       coordinates:
         latitude: null
         longitude: null
-      phone: ""
+      phone: "+33 4 72 43 82 19"
     # AI/LLM crawler guidance (llms.txt)
     ai:
       allow:

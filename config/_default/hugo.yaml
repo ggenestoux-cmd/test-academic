@@ -33,6 +33,10 @@ cascade:
 
 build:
   writeStats: true
+  postCSS:
+    modules:
+      - name: "tailwindcss"
+        cmd: "tailwindcss.exe"
 enableGitInfo: false
 summaryLength: 30
 pagination:
@@ -61,5 +65,14 @@ markup:
     lineNos: false
 security:
   _merge: deep
+  exec:
+    allow:
+      - '^go$'
+      - '^npx$'
+      - '^postcss$'
+      - '^tailwindcss$'
+      - '^node$'
+    osEnv:
+      - '(?i)^(development|home|path|programfiles|programfiles\(x86\)|systemroot|userprofile|tmp|temp)$'
 sitemap:
   _merge: deep

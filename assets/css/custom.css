@@ -1,0 +1,26 @@
+/* Brise les limitations de largeur "prose" imposées par Hugo Blox */
+.prose, 
+.max-w-prose,
+.max-w-3xl,
+article {
+    max-width: 80rem !important; /* Ajuste la largeur maximale (environ 1280px) */
+    width: 100% !important;
+}
+
+/* Élargit le conteneur principal de la page */
+.container-fluid, 
+.container {
+    max-width: 85rem !important;
+}
+
+/* Déclencher l'affichage du menu déroulant au survol de la souris */
+@media (pointer: fine) {
+    /* Cible le conteneur du menu contenant le parent */
+    .nav-item.dropdown:hover .dropdown-menu,
+    li:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Aligne proprement le menu sous la barre */
+        opacity: 1;
+        visibility: visible;
+    }
+}

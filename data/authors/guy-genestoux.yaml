@@ -1,0 +1,20 @@
+schema: hugoblox/author/v1
+slug: guy-genestoux
+is_owner: false
+name:
+  display: Dr. Guy Genestoux
+  given: Guy
+  family: Genestoux
+  alternate: ''  # Example: 王伟
+  pronunciation: ''  # Example: Wáng Wěi
+  pronouns: he/him
+postnominals:
+  - Ige
+status:
+  icon: "☕️"
+role: Senior AI Research Scientist
+user_groups:
+  - "Marchand"
+bio: |
+  Guy Genestoux est le Responsable du Système d'Information du Laboratoire DISP.
+
