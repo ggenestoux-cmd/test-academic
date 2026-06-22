@@ -17,3 +17,14 @@ Les étapes d'installation sont :
 
 1. `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process`
 2. `npm install -D tailwindcss postcss autoprefixer`
+
+## Modification
+
+C'est le commit 3087cf06ade922744c389d7d9d6a21576717a3a6
+
+Ce commit comprend de nombreux changement :
+
+* config/params.yaml
+* config/hugo.yaml
+* content/*
+* data/authors/*
